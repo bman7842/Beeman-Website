@@ -17,21 +17,17 @@ p {
 	padding: 10px;
 }
 
-nav {
-  margin-left: auto; margin-right: auto;
-  width: 50%;
-}
-
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  text-align: center;
 }
 
 nav ul li {
-  float: left;
+  background-color: #333;
+  display: inline-block;
 }
 
 nav ul li a {
