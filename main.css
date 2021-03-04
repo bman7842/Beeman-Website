@@ -17,12 +17,29 @@ p {
 	padding: 10px;
 }
 
+nav {
+  margin-left: auto; margin-right: auto;
+  width: 20%;
+}
+
 nav ul {
-  list-style-type: none
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
 nav ul li {
-  flex: left;
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 .center {
