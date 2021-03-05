@@ -26,9 +26,9 @@ nav {
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 10px;
-  margin:10px;
+  padding: 5px;
   background-color: #333;
+  border-radius: 15px;
   text-align: center;
 }
 
@@ -42,9 +42,27 @@ nav ul li a {
   display: inline-block;
   color: black;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 14px;
   text-decoration: none;
-  background-color: white
+  border-radius: 0px;
+  background-color: white;
+}
+
+nav li:first-child a {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+nav li:last-child a {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+nav a:hover {
+  background-color: yellow;
+}
+
+nav .active {
+  background-color: #3da2d9;
 }
 
 .center {
