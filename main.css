@@ -71,9 +71,20 @@ nav .active {
   margin-top:auto;
   margin-bottom:auto;
   margin-right: auto;
+  width: 400px;
 }
 
 .main_landing {
   display: block;
   height: 100%;
+}
+
+@media screen and (max-width: 350px) {
+  nav ul li {
+    display: block;
+  }
+
+  .center {
+    width: 100%;
+  }
 }
