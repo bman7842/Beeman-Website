@@ -12,8 +12,8 @@ a {
 }
 
 p {
-	background: #666;
-	color: white;
+	background: white;
+	color: #555;
 	padding: 10px;
 }
 
@@ -107,6 +107,6 @@ nav .active {
 }
 
 /* Show the dropdown menu on hover */
-.drop-element:hover + .drop-content {
+.drop-element:hover .drop-content {
   display:block;
 }
