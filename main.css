@@ -16,6 +16,7 @@ p {
 	background: white;
 	color: #555;
 	padding: 10px;
+  border-radius: 10px;
 }
 
 .center {
@@ -47,7 +48,7 @@ nav ul {
   background-color: #333;
   border-radius: 15px;
   text-align: center;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,200,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,150,0.2);
 }
 
 nav ul li {
@@ -66,11 +67,11 @@ nav ul li a {
   background-color: white;
 }
 
-nav ul:not(.drop-content) li:first-child a {
+nav ul li:first-child a:not(.drop-item) {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-nav ul:not(.drop-content) li:last-child a {
+nav ul li:last-child a:not(.drop-item) {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
