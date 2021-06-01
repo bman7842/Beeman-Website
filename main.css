@@ -4,21 +4,19 @@ body{
 	font-family: arial;
 }
 
-h1,h2 {
-	color: #555;
+h1,h2,h3 {
+	color: #333333;
 }
 
 a {
 	color: green;
 }
 
-p {
+.info {
 	background: white;
 	color: #555;
 	padding: 10px;
   border-radius: 10px;
-  margin-top: 25px;
-  margin-bottom: 25px;
 }
 
 input:focus {
@@ -35,6 +33,25 @@ input:focus {
   display: block;
   height: 100%;
 }
+
+.horizontal_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  magin-bottom: 25px;
+  padding: 0px;
+  width: 90%;
+  border-radius: 50px;
+}
+
+.horizontal_content:first-child {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+
 /****************/
 
 /*NAV BAR*/
