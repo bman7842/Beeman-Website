@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head> 
+		<title>Home</title>
+		<link href="../../main.css" rel="stylesheet" type="text/css"/>
+		<link href="timeclockstyle.css" rel="stylesheet" type="text/css"/>
+
+		<script src="timeclock.js" defer></script>
+	</head>
+
+	<body>
+		<div class="main_landing">
+			<div class="branding">
+				<img style="max-width:400px" class="center" src="../../content/logo.png">
+			</div>
+
+			<nav>
+				<ul>
+					<li><a class="" href="../../home.html"><b>HOME</b></a></li>
+					<li class="drop-element">
+						<a class="active" href="projects"><b>PROJECTS</b></a>
+						<ul class="drop-content">
+							<li><a class="drop-item active" href="">TIME CLOCK</a></li>
+							<li><a class="drop-item" href="../memorizer/memorizer.html">THE MEMORIZER</a></li>
+							<li><a class="drop-item" href="">Anotha one</a></li>
+						</ul>
+					</li>
+					<li><a href="contact"><b>CONTACT</b></a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="app">
+			<content style = "max-width: 400px" class="center">
+				<p style = "text-align: center">
+					The following is a very simple hours worked calculator, it takes two times inputed below and outputs the hours worked for that shift.
+				</p>
+			</content>
+
+			<div class="input-field center">
+				<div>
+					<label><b>CLOCK IN:</b></label>
+					<input class ="time-input" id = "timeIn" onfocus = "displayHelp('timeIn', 'Use the following format: 10:00 AM', 150)" onfocusout = "removeHelp('timeIn')"></input>
+				</div>
+				<div>
+					<label><b>CLOCK OUT:</b></label>
+					<input class ="time-input" id = "timeOut" onfocus = "displayHelp('timeOut', 'Use the following format: 10:00 AM', 150)" onfocusout = "removeHelp('timeOut')"></input>
+				</div>
+			</div>
+			<div class="output">
+				<p class="center" style="width:200px; text-align: center; display: block;">0 Hours Worked</p>
+			</div>
+		</div>
+	</body>
+</html>

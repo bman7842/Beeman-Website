@@ -1,0 +1,39 @@
+.input-field {
+	max-width: 500px;
+	text-align: center;
+}
+
+.input-field > div {
+	position: relative;
+}
+
+.input-field label {
+	text-shadow: 2px 2px #3da2d9;
+}
+.input-field > * {
+	display: inline-block;
+}
+
+.time-input {
+	width: 60px;
+	border-radius: 5px;
+	margin-left: 2px;
+	margin-right: 10px;
+	text-shadow: none;
+}
+
+.help-message {
+	position: absolute;
+	left: 0;
+	display: block;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.help-message > p {
+	text-align: center;
+	font-weight: bold;
+	margin: 0px;
+	padding: 15px;
+	border: 3px dashed red;
+}
