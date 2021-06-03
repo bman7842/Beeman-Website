@@ -1,4 +1,9 @@
 /*GENERAL STYLING*/
+
+body p,img,div,h3,h2,h1,content {
+  display: block;
+}
+
 body{
 	background:#999;
 	font-family: arial;
@@ -12,30 +17,38 @@ a {
 	color: green;
 }
 
-.info {
-	background: white;
-	color: #555;
-	margin: 25px;
+.vertical_module {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: flex-start;
+}
+
+.vertical_module > * {
+  position: relative;
+  flex: 1 1 auto;
+  align-self: stretch;
+}
+
+.info,.vertical_module {
+  background: white;
+  color: #555;
+  margin: 25px;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
-.info .center_module {
-  top: 50%; left: 50%;
-  transform: translate(-50%,-50%);
-  border-radius: 10px;
-  text-align: center;
-}
-
-.info .color_module {
+.color_module {
   background-color: #6ba6ff;
 }
 
-.info > :not(:last-child) {
+.vertical_module > :not(:last-child) {
   margin-bottom: 15px;
 }
 
-.info > * {
+.vertical_module > * {
   display: block;
   border-radius: 10px;
   padding: 10px;
@@ -43,7 +56,7 @@ a {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-.info h1,h2,h3 {
+.vertical_module h1,h2,h3 {
   background-color: #a9b5c7;
 }
 
@@ -52,7 +65,6 @@ input:focus {
 }
 
 .center {
-  display: block;
   margin-left: auto;
   margin-right: auto;
 }

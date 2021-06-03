@@ -33,7 +33,9 @@
 .help-message > p {
 	text-align: center;
 	font-weight: bold;
+	background-color: white;
+	border-radius: 15px;
 	margin: 0px;
-	padding: 15px;
+	padding: 10px;
 	border: 3px dashed red;
 }
