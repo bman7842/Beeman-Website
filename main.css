@@ -13,24 +13,44 @@ a {
 }
 
 .info {
+  position: relative;
 	background: white;
 	color: #555;
-	padding: 10px;
+	margin: 25px;
   border-radius: 10px;
 }
 
-.info h1,h2,h3,p {
+.info .center_module {
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
   border-radius: 10px;
-  padding: 10px;
-  margin: 25px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  text-align: center;
 }
-.info h1,h2,h3 {
-  background: #a9b5c7;
-}
-.info p {
+
+.info .color_module {
   background-color: #6ba6ff;
-  height: 100%;
+}
+
+.info > * {
+  display: block;
+  position: absolute;
+  padding: 0px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  margin: 5%;
+  padding-left: 5%; padding-right: 5%;
+  width: 80%;
+}
+
+.info .body {
+  top: 20%;
+  bottom: 0;
+}
+
+.info h1,h2,h3 {
+  top: 0;
+  padding: 5%;
+  background-color: #a9b5c7;
 }
 
 input:focus {
@@ -49,14 +69,15 @@ input:focus {
 }
 
 .horizontal_content {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  flex-wrap: wrap;
+  display: block;
   margin-top: 25px;
   magin-bottom: 25px;
   padding: 0px;
   border-radius: 30px;
+}
+
+.horizontal_content > * {
+  display: inline-block;
 }
 
 .horizontal_content:first-child {
