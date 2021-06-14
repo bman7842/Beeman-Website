@@ -32,7 +32,7 @@ a {
   align-self: stretch;
 }
 
-.info,.vertical_module {
+.info,.vertical_module,.horizontal_module {
   background: white;
   color: #555;
   margin: 25px;
@@ -48,7 +48,7 @@ a {
   margin-bottom: 15px;
 }
 
-.vertical_module > * {
+.vertical_module > *, .horizontal_module > * {
   display: block;
   border-radius: 10px;
   padding: 10px;
@@ -58,6 +58,12 @@ a {
 
 .vertical_module h1,h2,h3 {
   background-color: #a9b5c7;
+}
+
+.horizontal_module {
+  display: flex;
+  align-self: flex-start;
+  justify-content: space-around;
 }
 
 input:focus {
@@ -72,23 +78,6 @@ input:focus {
 .main_landing {
   display: block;
   height: 100%;
-}
-
-.horizontal_content {
-  display: block;
-  margin-top: 25px;
-  magin-bottom: 25px;
-  padding: 0px;
-  border-radius: 30px;
-}
-
-.horizontal_content > * {
-  display: inline-block;
-}
-
-.horizontal_content:first-child {
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
 }
 
 .img-wrapper {
